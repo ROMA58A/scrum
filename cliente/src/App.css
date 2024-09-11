@@ -1,0 +1,88 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 15vmin; /* Ajusta el tamaño del logo */
+  pointer-events: none;
+  animation: App-logo-slide infinite 3s linear; /* Cambia la animación */
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-slide infinite 3s linear; /* Cambia la animación */
+  }
+}
+
+.App-header {
+  background-color: #5242e0;
+  min-height: 30vh; /* Aumenta el tamaño del header */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 20px; /* Añade algo de espacio alrededor */
+  border-bottom: 4px solid #5242e0; /* Añade una línea en la parte inferior del header */
+}
+
+.App-header h1 {
+  font-size: 3rem; /* Tamaño del título */
+  margin: 10px 0;
+}
+
+.App-header p {
+  font-size: 1.2rem; /* Tamaño del mensaje de bienvenida */
+  margin: 10px 0;
+}
+
+.App-link {
+  color: #61dafb;
+  font-weight: bold; /* Resalta los enlaces */
+}
+
+@keyframes App-logo-slide {
+  0% {
+    transform: translateX(-50px); /* Mueve el logo a la izquierda */
+  }
+  50% {
+    transform: translateX(50px); /* Mueve el logo a la derecha */
+  }
+  100% {
+    transform: translateX(-50px); /* Regresa el logo a la posición inicial */
+  }
+}
+
+.App-footer {
+  background-color: #5242e0;
+  color: white;
+  padding: 40px 20px; /* Incrementa el padding para un footer más grande */
+  text-align: center;
+  font-size: 18px; /* Aumenta el tamaño de fuente */
+  margin-top: 50px;
+  width: 100%;
+  position: relative; /* Puede ser fixed si deseas que siempre esté visible */
+}
+
+.footer-text {
+  font-size: 24px; /* Texto más grande */
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* Espaciado entre los íconos */
+  margin-top: 20px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 40px; /* Íconos más grandes */
+  transition: color 0.3s ease; /* Transición suave en hover */
+}
+
+.social-icons a:hover {
+  color: #61dafb; /* Cambia el color al pasar el ratón */
+}
